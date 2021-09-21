@@ -22,4 +22,21 @@ displayBooks() {
 	});
 }
 
+bookElement(book) {
+  const li = document.createElement('li');
+  const title = document.createElement('h4');
+  const author = document.createElement('h4');
+  const removeBtn = document.createElement('button');
+  removeBtn.addEventListener('click', () => this.removeBook(book.id));
+  title.innerText = `Book's title: ${book.title}`;
+  author.innerText = `Author's name: ${book.author}`;
+  removeBtn.innerText = 'remove';
+  title.classList.add('title');
+  li.appendChild(title);
+  li.appendChild(author);
+  li.appendChild(removeBtn);
+  return li;
+  }
+}
+
 });
