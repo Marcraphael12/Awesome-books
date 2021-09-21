@@ -55,4 +55,9 @@ form.addEventListener('submit', (event) => {
 	library.addBook(book);
 });
 
+const books = localStorage.getItem('books');
+if (books) {
+	library.list = JSON.parse(books);
+}
+
 });
