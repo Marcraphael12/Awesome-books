@@ -41,4 +41,18 @@ bookElement(book) {
 
 const library = new BookList();
 
+window.addEventListener('load', () => {
+const form = document.getElementById('booksForm');
+form.addEventListener('submit', (event) => {
+	event.preventDefault();
+	const title = document.getElementById('bookTitle');
+	const author = document.getElementById('bookAuthor');
+	const book = {
+		title: title.value || `This book doesn't have a title!`,
+		author: author.value || `This book doesn't have an author!`,
+		id: Date.now(),
+	};
+	library.addBook(book);
+});
+
 });
