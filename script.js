@@ -39,4 +39,6 @@ bookElement(book) {
   }
 }
 
+const library = new BookList();
+
 });
