@@ -60,4 +60,6 @@ if (books) {
 	library.list = JSON.parse(books);
 }
 
+
 });
+library.displayBooks();
