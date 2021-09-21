@@ -15,4 +15,11 @@ removeBook(id) {
 	this.displayBooks();
 }
 
+displayBooks() {
+	const result = document.getElementById('Result');
+	this.list.forEach((book) => {
+		result.appendChild(this.bookElement(book));
+	});
+}
+
 });
