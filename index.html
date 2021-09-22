@@ -1,31 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Awesome Books</title>
+    <link href="./style.css" rel="stylesheet" />
+  </head>
 
-  <!-- Css links -->
-  <link rel="stylesheet" href="./style.css">
+  <body>
+    <main>
+      <h1>Awesome Books</h1>
+      <ul id="Result"></ul>
 
-  <!-- JavaScipt links -->
-  <script src="./script.js" defer></script>
-
-  <title>Document</title>
-</head>
-
-<body>
-  <h1><u>Awesome Books</u></h1>
-  <br>
-  <div class="container">
-    <hr class="here">
-    <input type="text" class="author" name="Author" value="Author's name">
-    <br>
-    <br>
-    <input type="text" class="book" name="Book" value="Book's name">
-    <br>
-    <br>
-    <input type="button" class="add" name="Add" value="Add +">
-  </div>
-</body>
+      <form id="booksForm">
+        <input type="text" id="bookTitle" placeholder="Book's title" />
+        <br /><br />
+        <input type="text" id="bookAuthor" placeholder="Book's author" />
+        <br />
+        <br />
+        <button type="submit" id="submit">add +</button>
+      </form>
+    </main>
+    <script src="./script.js"></script>
+  </body>
 </html>
