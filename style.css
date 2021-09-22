@@ -3,73 +3,75 @@
   margin: 0;
   padding: 0;
   list-style: none;
-	color: black;
+  color: black;
 }
 
 /* IDs section */
 #Result {
-	border: solid 1px white;
-	width: 100%;
-	height: auto;
-	display: flex;
-	flex-direction: column;
-	padding: 20px;
-	margin-bottom: 30px;
+  border: solid 1px;
+  width: 60%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin-bottom: 30px;
 }
 
 #booksForm {
-	width: 60%;
-	height: auto;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
-#bookTitle, #bookAuthor {
-	width: 100%;
-	height: 50px;
-	padding: 5px 10px;
-	margin-bottom: 20px;
-	background: none;
-	font-weight: 500;
-	font-size: 15px;
-	border: 1px solid white;
+#bookTitle,
+#bookAuthor {
+  width: 100%;
+  height: 50px;
+  padding: 5px;
+  margin-bottom: 10px;
+  background: none;
+  font-weight: 500;
+  font-size: 15px;
+  border: 1px solid black;
+}
+
+#bookTitle::placeholder,
+#bookAuthor::placeholder {
+  color: black;
+  font-weight: bold;
 }
 
 /* Class section */
 body {
-	display: flex;
-	align-content: center;
-	justify-content: center;
-	background-image: url(./image/background.jpg);
-	background-size: 100% 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background-image: url(./image/background.jpg);
+  background-size: 100% 100%;
 }
 
 main {
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	width: 100%;
-	height: 100vh;
-	background: rgba(0, 0, 0, 0.3);
-	padding: 50px 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 50px 30px;
 }
 
 .heading {
-	width: max-content;
-	height: auto;
-	font-size: 40px;
-	margin-bottom: 20px;
+  width: max-content;
+  height: auto;
+  font-size: 40px;
 }
 
-.add-button, .remove-button {
-	padding: 5px 10px;
+button {
+  width: 7em;
+  height: 2em;
 }
 
-.book-title {
-
-}
-
-.author-name {
-
+h3 {
+  margin-bottom: 10px;
 }
