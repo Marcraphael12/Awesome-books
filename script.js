@@ -55,6 +55,8 @@ window.addEventListener('load', () => {
 
     };
     library.addBook(book);
+		title.value = null;
+		author.value = null;
   });
 
   const books = localStorage.getItem('books');
