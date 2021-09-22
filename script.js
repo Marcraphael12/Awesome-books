@@ -48,7 +48,7 @@ window.addEventListener('load', () => {
     event.preventDefault();
     const title = document.getElementById('bookTitle');
     const author = document.getElementById('bookAuthor');
-    if (!(author.value && title.value)){
+    if (!(author.value && title.value)) {
       return;
     }
     const book = {
@@ -58,8 +58,8 @@ window.addEventListener('load', () => {
 
     };
     library.addBook(book);
-		  title.value = null;
-		  author.value = null;
+    title.value = null;
+    author.value = null;
   });
 
   const books = localStorage.getItem('books');
