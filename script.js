@@ -46,8 +46,12 @@ window.addEventListener('load', () => {
   const form = document.getElementById('booksForm');
   form.addEventListener('submit', (event) => {
     event.preventDefault();
+   
     const title = document.getElementById('bookTitle');
     const author = document.getElementById('bookAuthor');
+    if(!(author.value && title.value)){
+      return;
+    }
     const book = {
       title: title.value || 'This book doesn\'t have a title!',
       author: author.value || 'This book doesn\'t have an author!',
