@@ -25,9 +25,17 @@ class BookList {
 
   bookElement(book) {
     const li = document.createElement('li');
+		li.classList.add('book-container');
+
     const title = document.createElement('h5');
+		title.classList.add('book-title');
+
     const author = document.createElement('h5');
+		author.classList.add('author-name');
+
     const removeBtn = document.createElement('button');
+		removeBtn.classList.add('remove-button');
+		
     removeBtn.addEventListener('click', () => this.removeBook(book.id));
     title.innerText = book.title;
     author.innerText = book.author;
