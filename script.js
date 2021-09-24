@@ -86,39 +86,38 @@ const List = document.querySelectorAll('.Books');
 const AddBook = document.querySelectorAll('.New');
 const ContactList = document.querySelectorAll('.Contact');
 
-
 bookList.addEventListener('click', () => {
-  for (let i = 0; i < AddBook.length; i++) {
+  for (let i = 0; i < AddBook.length; i += 1) {
     AddBook[i].style.display = 'none';
   }
-  for (let i = 0; i < ContactList.length; i++) {
+  for (let i = 0; i < ContactList.length; i += 1) {
     ContactList[i].style.display = 'none';
   }
-  for (let i = 0; i < List.length; i++) {
+  for (let i = 0; i < List.length; i += 1) {
     List[i].style.display = 'flex';
   }
 });
 
 NewBook.addEventListener('click', () => {
-  for (let i = 0; i < AddBook.length; i++) {
+  for (let i = 0; i < AddBook.length; i += 1) {
     AddBook[i].style.display = 'flex';
   }
-  for (let i = 0; i < ContactList.length; i++) {
+  for (let i = 0; i < ContactList.length; i += 1) {
     ContactList[i].style.display = 'none';
   }
-  for (let i = 0; i < List.length; i++) {
+  for (let i = 0; i < List.length; i += 1) {
     List[i].style.display = 'none';
   }
 });
 
 Contact.addEventListener('click', () => {
-  for (let i = 0; i < AddBook.length; i++) {
+  for (let i = 0; i < AddBook.length; i += 1) {
     AddBook[i].style.display = 'none';
   }
-  for (let i = 0; i < ContactList.length; i++) {
+  for (let i = 0; i < ContactList.length; i += 1) {
     ContactList[i].style.display = 'flex';
   }
-  for (let i = 0; i < List.length; i++) {
+  for (let i = 0; i < List.length; i += 1) {
     List[i].style.display = 'none';
   }
 });
