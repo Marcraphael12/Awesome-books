@@ -16,7 +16,7 @@ class BookList {
   }
 
   displayBooks() {
-    const result = document.getElementById('Result');
+    const result = document.querySelector('.result');
     result.innerHTML = '';
     this.list.forEach((book) => {
       result.appendChild(this.bookElement(book));
@@ -25,14 +25,21 @@ class BookList {
 
   bookElement(book) {
     const li = document.createElement('li');
+    li.classList.add('book-container');
+
     const title = document.createElement('h5');
+    title.classList.add('title');
     const author = document.createElement('h5');
+    author.classList.add('name');
+
     const removeBtn = document.createElement('button');
+    removeBtn.classList.add('remove-button');
+
     removeBtn.addEventListener('click', () => this.removeBook(book.id));
     title.innerText = book.title;
-    author.innerText = book.author;
+    author.innerText = `by ${book.author}`;
     removeBtn.innerText = 'remove';
-    title.classList.add('title');
+
     li.appendChild(title);
     li.appendChild(author);
     li.appendChild(removeBtn);
@@ -43,19 +50,16 @@ class BookList {
 const library = new BookList();
 
 window.addEventListener('load', () => {
-  const form = document.getElementById('booksForm');
+  const form = document.querySelector('.books-form');
   form.addEventListener('submit', (event) => {
     event.preventDefault();
-    const title = document.getElementById('bookTitle');
-    const author = document.getElementById('bookAuthor');
-    if (!(author.value && title.value)) {
-      return;
-    }
-    const book = {
-      title: title.value || 'This book doesn\'t have a title!',
-      author: author.value || 'This book doesn\'t have an author!',
-      id: Date.now(),
+    const title = document.querySelector('.book-title');
+    const author = document.querySelector('.book-author');
 
+    const book = {
+      title: title.value || 'Unknow title',
+      author: author.value || 'Unknow author',
+      id: Date.now(),
     };
     library.addBook(book);
     title.value = null;
