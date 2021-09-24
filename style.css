@@ -6,7 +6,23 @@
   color: orange;
 }
 
-/* IDs section */
+body {
+  display: flex;
+  align-content: center;
+  background-image: url(./image/background.jpg);
+  background-size: 100% 100%;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 50px 30px;
+}
+
 .result {
   border: solid 0.5px orange;
   width: 60%;
@@ -40,23 +56,6 @@
 .inputs::placeholder {
   color: orange;
   font-weight: bold;
-}
-
-body {
-  display: flex;
-  align-content: center;
-  background-image: url(./image/background.jpg);
-  background-size: 100% 100%;
-}
-
-main {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.6);
-  padding: 50px 30px;
 }
 
 .heading {
