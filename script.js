@@ -28,19 +28,18 @@ class BookList {
 		li.classList.add('book-container');
 
     const title = document.createElement('h5');
-		title.classList.add('book-title');
+		title.classList.add('book-title', 'title');
 
     const author = document.createElement('h5');
-		author.classList.add('author-name');
+		author.classList.add('author-name', 'name');
 
     const removeBtn = document.createElement('button');
 		removeBtn.classList.add('remove-button');
 
     removeBtn.addEventListener('click', () => this.removeBook(book.id));
     title.innerText = book.title;
-    author.innerText = book.author;
-    removeBtn.innerText = 'remove';
-    title.classList.add('title');
+    author.innerText = `by ${book.author}`;
+    removeBtn.innerText = 'remove -';
     li.appendChild(title);
     li.appendChild(author);
     li.appendChild(removeBtn);
