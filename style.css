@@ -10,7 +10,6 @@
 body {
   display: flex;
   align-content: center;
-
 }
 
 section {
@@ -136,5 +135,5 @@ button {
 button:hover {
   border: none;
   color: white;
-  box-shadow: 25px 11px 60px -40px rgba(255,165,0,0.75) inset;
+  box-shadow: 25px 11px 60px -40px rgba(255, 165, 0, 0.75) inset;
 }
