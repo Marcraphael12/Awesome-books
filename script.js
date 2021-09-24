@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 class BookList {
   constructor() {
     this.list = [];
@@ -70,5 +71,53 @@ window.addEventListener('load', () => {
   if (books) {
     library.list = JSON.parse(books);
   }
+  const { DateTime } = luxon;
+  const now = DateTime.now();
+  document.querySelector('.date-container').textContent = now.toLocaleString(DateTime.DATETIME_MED);
+
   library.displayBooks();
+});
+
+const bookList = document.querySelector('.book-list');
+const NewBook = document.querySelector('.new-book');
+const Contact = document.querySelector('.contact');
+
+const List = document.querySelectorAll('.Books');
+const AddBook = document.querySelectorAll('.New');
+const ContactList = document.querySelectorAll('.Contact');
+
+bookList.addEventListener('click', () => {
+  for (let i = 0; i < AddBook.length; i += 1) {
+    AddBook[i].style.display = 'none';
+  }
+  for (let i = 0; i < ContactList.length; i += 1) {
+    ContactList[i].style.display = 'none';
+  }
+  for (let i = 0; i < List.length; i += 1) {
+    List[i].style.display = 'flex';
+  }
+});
+
+NewBook.addEventListener('click', () => {
+  for (let i = 0; i < AddBook.length; i += 1) {
+    AddBook[i].style.display = 'flex';
+  }
+  for (let i = 0; i < ContactList.length; i += 1) {
+    ContactList[i].style.display = 'none';
+  }
+  for (let i = 0; i < List.length; i += 1) {
+    List[i].style.display = 'none';
+  }
+});
+
+Contact.addEventListener('click', () => {
+  for (let i = 0; i < AddBook.length; i += 1) {
+    AddBook[i].style.display = 'none';
+  }
+  for (let i = 0; i < ContactList.length; i += 1) {
+    ContactList[i].style.display = 'flex';
+  }
+  for (let i = 0; i < List.length; i += 1) {
+    List[i].style.display = 'none';
+  }
 });

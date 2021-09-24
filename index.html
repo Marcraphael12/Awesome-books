@@ -8,6 +8,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+		<script src="https://cdn.jsdelivr.net/npm/luxon@2.0.2/build/global/luxon.min.js" defer></script>
     <title>Awesome Books</title>
     <link href="./style.css" rel="stylesheet" />
   </head>
@@ -15,15 +16,39 @@
 		<section>
 		</section>
     <main>
-      <h1 class="heading">Awesome Books</h1>
-      <ul class="result">
+			<nav>
+				<h1 class="heading">Awesome Books</h1>
+				<ul>
+					<li>
+						<button class="book-list" type="button" name="button">Book list</button>
+						<button class="new-book" type="button" name="button">New book</button>
+						<button class="contact" type="button" name="button">Contact me</button>
+					</li>
+				</ul>
+				<div class="date-container"></div>
+			</nav>
+
+			<h3 class="Books">All awesome books</h3>
+			<ul class="result Books">
 			</ul>
-      <h3>Add a new book</h3>
-      <form class="books-form">
+
+			<h3 class="New">Add a new book</h3>
+      <form class="books-form New">
         <input type="text" class="book-title inputs" placeholder="Book's title" />
         <input type="text" class="book-author inputs" placeholder="Book's author" />
         <button class="add-button" type="submit" id="submit">add +</button>
       </form>
+
+			<h3 class="Contact">Contact information</h3>
+			<div class="Contact cnt">
+				<p>Do have any question or just want to say 'Hello', you can reach out to me!</p>
+				<ul class="infos">
+					<li>Email: <a href="mailto:marcraphael979@gmail.com">marcraphael979@gmail.com </a></li>
+					<li>Phone numer: +237698334054</li>
+					<li>Adress: Omnisport, yaounde, Centre, Cameroon</li>
+					<li>Copyright: Marc raphael</li>
+				</ul>
+			</div>
     </main>
     <script src="./script.js"></script>
   </body>
