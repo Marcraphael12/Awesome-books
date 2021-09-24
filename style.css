@@ -28,7 +28,7 @@ main {
   width: 100%;
   height: 100vh;
   background: rgba(0, 0, 0, 0.5);
-  padding: 50px 30px;
+  padding: 20px 30px;
   z-index: 2;
   position: absolute;
 }
@@ -37,6 +37,25 @@ main {
   width: max-content;
   height: auto;
   font-size: 40px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  max-width: 1024px;
+  height: auto;
+  padding: 5px 10px;
+  margin-bottom: 100px;
+}
+
+.date-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: end;
 }
 
 h3 {
@@ -98,8 +117,8 @@ h3 {
 }
 
 .books-form {
-  height: auto;
   display: flex;
+  height: auto;
   flex-direction: column;
   align-items: flex-end;
 }
@@ -136,4 +155,25 @@ button:hover {
   border: none;
   color: white;
   box-shadow: 25px 11px 60px -40px rgba(255, 165, 0, 0.75) inset;
+}
+
+.Contact,
+.Books {
+  display: none;
+}
+
+.cnt {
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+}
+
+.infos {
+  padding-left: 50px;
+  margin-top: 10px;
+}
+
+.infos li {
+  color: #cfccc6;
+  list-style: disc;
 }
