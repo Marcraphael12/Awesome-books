@@ -23,6 +23,16 @@ main {
   padding: 50px 30px;
 }
 
+.heading {
+  width: max-content;
+  height: auto;
+  font-size: 40px;
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
 .result {
   border: solid 0.5px orange;
   width: 60%;
@@ -58,12 +68,6 @@ main {
   font-weight: bold;
 }
 
-.heading {
-  width: max-content;
-  height: auto;
-  font-size: 40px;
-}
-
 button {
 	background-color: rgba(0, 0, 0, 0.5);
 	border: 1px solid orange;
@@ -77,8 +81,4 @@ button:hover {
 	border: none;
 	color: white;
 	box-shadow: 25px 11px 60px -40px rgba(255,165,0,0.75) inset;
-}
-
-h3 {
-  margin-bottom: 10px;
 }
