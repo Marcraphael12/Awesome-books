@@ -5,7 +5,9 @@
 Awesome Books
 
 > This project is designed to add and remove Books added to the local storage with the use of classes.
-> ![screenshot](./image/abooks.png)
+> ![screenshot](./image/AwesomeBooks1.png)
+> ![screenshot](./image/AwesomeBooks2.png)
+> ![screenshot](./image/AwesomeBooks3.png)
 
 Additional description about the project and its features.
 
