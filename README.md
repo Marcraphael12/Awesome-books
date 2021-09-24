@@ -14,6 +14,9 @@ Additional description about the project and its features.
 - All the books are being stored in the local storage unless when it is removed.
 - Books won't be added unless both author and title fields are filled.
 
+## Live demo
+[See live](https://marcraphael12.github.io/Awesome-books/).
+
 ## Built With
 
 - github
@@ -23,15 +26,15 @@ Additional description about the project and its features.
 
 ## Authors
 
-👤 **Mucyo claude**
-**Marc Raphael ESSOGO BIDZOGO**
-**Tufoin Nkuo**
+👤 **Marc Raphael**
 
 ## 🤝 Contributing
 
+## Marc Raphael
+
 ## Tufoin Nkuo
 
-## Marc Raphael
+## Mucyo claude
 
 Contributions, issues, and feature requests are welcome!
 
