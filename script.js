@@ -25,21 +25,21 @@ class BookList {
 
   bookElement(book) {
     const li = document.createElement('li');
-  li.classList.add('book-container');
+		li.classList.add('book-container');
 
     const title = document.createElement('h5');
-  title.classList.add('book-title', 'title');
-
+    title.classList.add('title');
     const author = document.createElement('h5');
-  author.classList.add('author-name', 'name');
+    author.classList.add('name');
 
     const removeBtn = document.createElement('button');
-  removeBtn.classList.add('remove-button');
+		removeBtn.classList.add('remove-button');
 
     removeBtn.addEventListener('click', () => this.removeBook(book.id));
     title.innerText = book.title;
     author.innerText = `by ${book.author}`;
-    removeBtn.innerText = 'remove -';
+    removeBtn.innerText = 'remove';
+
     li.appendChild(title);
     li.appendChild(author);
     li.appendChild(removeBtn);
@@ -55,14 +55,11 @@ window.addEventListener('load', () => {
     event.preventDefault();
     const title = document.querySelector('.book-title');
     const author = document.querySelector('.book-author');
-    if (!(author.value && title.value)) {
-      return;
-    }
-    const book = {
-      title: title.value || 'This book doesn\'t have a title!',
-      author: author.value || 'This book doesn\'t have an author!',
-      id: Date.now(),
 
+    const book = {
+      title: title.value || 'Unknow title',
+      author: author.value || 'Unknow author',
+      id: Date.now(),
     };
     library.addBook(book);
     title.value = null;
