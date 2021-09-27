@@ -4,7 +4,7 @@
 
 Awesome Books
 
-> This project is designed to add and remove Books added to the local storage with the use of classes.
+> This is a web app that allows you to keep your prefered books safely
 > ![screenshot](./image/AwesomeBooks1.png)
 > ![screenshot](./image/AwesomeBooks2.png)
 > ![screenshot](./image/AwesomeBooks3.png)
@@ -14,7 +14,7 @@ Additional description about the project and its features.
 - Books are being added in order
 - Books are also being removed respectively
 - All the books are being stored in the local storage unless when it is removed.
-- Books won't be added unless both author and title fields are filled.
+- You can add a book even if you don't know the author or his title.
 
 ## Live demo
 [See live](https://marcraphael12.github.io/Awesome-books/).
@@ -32,15 +32,13 @@ Additional description about the project and its features.
 
 ## 🤝 Contributing
 
-## Marc Raphael
-
 ## Tufoin Nkuo
 
 ## Mucyo claude
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Marcraphael12/Awesome-books/issues/).
 
 ## Show your support
 
