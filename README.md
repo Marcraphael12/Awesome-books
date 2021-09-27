@@ -32,9 +32,9 @@ Additional description about the project and its features.
 
 ## 🤝 Contributing
 
-## Tufoin Nkuo
+**Tufoin Nkuo**
 
-## Mucyo claude
+**Mucyo claude**
 
 Contributions, issues, and feature requests are welcome!
 
